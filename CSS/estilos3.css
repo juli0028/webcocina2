@@ -1,0 +1,83 @@
+.contenido
+{
+    width: auto;
+    height: auto;
+    background-color: orange;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 10px;
+    text-align: justify;
+    display: flex; /*columna vertical*/
+}
+.imagen
+{
+    width: 100%;
+    height: 400px;
+}
+.conten1, .conten2
+{
+    display: block; /*filas*/
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    
+    text-align: right;
+}
+.conten1, .conten2
+{
+    width: 80%;
+    height: auto;
+    display: block;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    text-align: justify;
+}
+.conten2
+{
+    text-align: right;
+}
+.imagen
+{
+    width: 80%;
+    height: 350;
+}
+
+button
+{
+    font-size: 10pt;
+    background-color: aqua;
+    color: azure;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover
+{
+    font-size: 10pt;
+    background-color: rgb(30, 255, 0);
+    color: azure;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button a link, button :visited
+{
+    text-decoration: none;
+    color: bisque;
+}
+.conten3
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    /*border: 2px solid black;*/
+    padding: 20px;
+}
+.conten3 h1
+{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    padding: 8px 20px;
+    border-radius: 5px;
+}

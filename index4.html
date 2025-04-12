@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="CSS/flexslider.css">
+    <link rel="icon" href="./Imagenes/Imagenes/gorro(favicon).png" type="Imagen/png"> <!--codigo para agragar el favicon -->
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="./Imagenes/Imagenes/slider1.jpg" alt="Imagen 1"></div>
+            <div class="slide"><img src="./Imagenes/Imagenes/slider2.jpg" alt="Imagen 2"></div>
+            <div class="slide"><img src="./Imagenes/Imagenes/slider3.jpg" alt="Imagen 3"></div>
+            <div class="slide"><img src="./Imagenes/Imagenes/slider4.jpg" alt="Imagen 4"></div>
+            <div class="slide"><img src="./Imagenes/Imagenes/slider5.jpg" alt="Imagen 5"></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    <script>
+        let index = 0;
+        function moveSlide(step) {
+            const slides = document.querySelector('.slides');
+            const totalSlides = document.querySelectorAll('.slide').length;
+            index = (index + step + totalSlides) % totalSlides;
+            slides.style.transform = `translateX(-${index * 100}%)`;
+        }
+    </script>
+</body>
+</html>

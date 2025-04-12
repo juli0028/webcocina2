@@ -1,0 +1,84 @@
+/*estilos para la cuadricula de imagenes*/
+.cuadriculas
+{
+    width: 100%;
+    display: flex;
+    grid-template-columns: repeat(auto-fit), minmax(1200px);
+    gap: 20px;
+}
+.item
+{
+    background-color: rgb(red, green, blue);
+    box-shadow: 4px 4px 4px black;
+    margin: 0px 10px;
+    text-align: center;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.item img
+{
+    width: 100%;
+    height: auto;
+    padding: 0px 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.item img:hover
+{
+    filter: brightness(0.8);
+    transform: scale(1.03);
+}
+
+/*ESPACIO*/
+.cuadriculas2
+{
+    display: flex;
+    grid-template-columns: repeat(auto-fit), minmax(1200px);
+    gap: 20px;
+}
+.item
+{
+    background-color: rgb(red, green, blue);
+    box-shadow: 4px 4px 4px black;
+    margin: 0px 10px;
+    text-align: center;
+    border-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+.item img
+{
+    max-width: 90%;
+    max-height: 100%;
+    padding: 0px 10px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+.item img:hover
+{
+    /*filter: brightness(0.8);*/
+    transform: scale(1.7); /*escala*/
+}
+/*ESPACIO?*/
+.menusecundario li a:focus
+{
+    transform: scale(1.05);
+    outline: none;
+}
+.menusecundario li a :hover, .menusecundario li a:focus
+{
+    background-color: rgb(red, green, blue);
+    color: aqua;
+    transform: scale(1.05);
+    outline: none;
+    /*el foco que al presionarse click debe quedarse marcado*/
+}
+.foco.activo
+{
+    background-color: black;
+    color: aqua;
+    transform: scale(1.05);
+    font-weight: bold;
+    border-right: 2px solid bisque;
+}

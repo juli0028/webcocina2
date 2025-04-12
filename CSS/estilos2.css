@@ -1,0 +1,43 @@
+.banner
+{
+    width: 100%;
+    height: 550px;
+    background-image: url(/Imagenes/Banner/banner\ cocina.png);
+    background-position: justify; /*posición de la imagen justificado o centrado*/
+    background-size: cover; /*contenedor del fondo ajustado, utiliza  cuando se hace modulos de repeticióncontain*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "courier new", 'Courier New', Courier, monospace;
+    color: azure;
+    position: relative; /*debe ocupar un ancho maximo con un objeto marco*/
+    display: flex;
+}
+.banner::before
+{
+    position: absolute; /*no debo salir de una proporsicion o un marco establecido*/
+    content: ""; /*define un objeto vacio y sin relleno de texto*/
+    width: 100%; /*define el ancho del bloque*/
+    height: 100%; /*define el alto del bloque*/
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.407);
+}
+.bannercontenido
+{
+    z-index: 15px; /*profundidad del texto en el banner*/
+    font-size: 30pt; /*tamaño de la fuente*/
+    max-width: 800px; /*ancho maximo del texto dentro del contenedor*/
+    font-family: "Arial narrow", arial, sans-serif;
+    text-align: justify;
+}
+.banner h1
+{
+    font-size: 28pt; /*tamaño de la fuente*/
+    margin-bottom: 10pt;
+    font-weight: bold;
+}
+.banner p
+{
+    font-size: 16pt; /*tamaño de la fuente*/
+}

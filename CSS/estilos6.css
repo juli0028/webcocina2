@@ -1,0 +1,44 @@
+/*ESPACIO*/
+.migadepan2
+{
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(83, 216, 89);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+}
+.menusecundario
+{
+    display: block; /*define el bloque horizontal*/
+    font-size: 10pt;
+    position: relative; /*ajustes adicionales que se hagan dentro de html*/
+}
+.menusecundario > li
+{
+    display: flex;
+    /*padding: 10px; distancia entre los botones del menu*/
+}
+.menusecundario > li > a
+{
+    padding: 10px;
+    text-decoration: none; /*quitar el subrayado*/
+    color: black;
+}
+.menusecundario > li > a:hover
+{
+    background-color: rgb(35, 199, 62);
+    color: rgb(200, 32, 32) /*color de fuente*/
+}
+.breadcrumb-item
+{
+    margin-right: 20px;
+    cursor: pointer;
+}
+.breadcrumb-item:hover
+{
+    color: bisque;
+}

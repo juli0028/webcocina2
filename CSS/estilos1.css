@@ -1,0 +1,48 @@
+.Imagenes
+{
+    width: 100%; /*ancho de la pantalla*/
+    height: 10%/*341px; alto de la pantalla*/
+
+    /*px = pixel
+    pt = puntos fuentes
+    % = se utiliza para responsive */
+}
+.migadepan
+{
+    width: 100%; /*ancho de la miga de pan*/
+    background-color: rgb(241, 150, 46);
+    display: inline-block; /*bloque en linea para que no haya serparación entre la cabecera y el menú*/
+}
+/*???*/.migadepan ul
+{
+    list-style: none; /*sin viñetas o sin numeracion*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14pt; /*tipo de fuente y tamaño de fuente*/
+}
+.menuprimario
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16;
+    list-style: none; /*estilo de lista sin puntos, viñetas o númeración*/
+    text-align: center; /*menú centrado, (posiciónes left, right, center)*/
+    /* padding: 10px; separación de los menú dentro de la miga de pan*/
+}
+.menuprimario > li
+{
+    display: inline-block;
+    position: relative;
+    /*padding: 10px; distancia entre los botones del menu*/
+}
+.menuprimario > li > a
+{
+    padding: 15px 15px;
+    text-decoration: none; /*quitar el subrayado*/
+    color: beige;
+}
+.menuprimario > li > a:hover
+{
+    background-color: rgb(35, 199, 62);
+    color: white; /*color de fuente*/
+    padding: 15px;
+    
+}
